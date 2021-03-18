@@ -3,9 +3,7 @@
 */
 import { fabric } from 'fabric';
 export class GuidelinePlugin {
-    constructor(canvas) {
-        this.canvas = canvas;
-        this.init(canvas);
+    constructor() {
     }
     init(canvas) {
         var ctx = canvas.getSelectionContext(), aligningLineOffset = 5, aligningLineMargin = 4, aligningLineWidth = 1, aligningLineColor = 'rgb(0,255,0)', viewportTransform = canvas.viewportTransform, zoom = 1;

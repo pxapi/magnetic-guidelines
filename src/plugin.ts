@@ -5,12 +5,10 @@ import { fabric } from 'fabric';
 import { ILineOptions } from "fabric/fabric-impl";
 
 export class GuidelinePlugin {
-  canvas: fabric.Canvas;
 
-  constructor(canvas: fabric.Canvas) {
-    this.canvas = canvas;
-    this.init(canvas);
+  constructor() {
   }
+
   init(canvas: fabric.Canvas){
     var ctx = canvas.getSelectionContext(),
         aligningLineOffset = 5,
